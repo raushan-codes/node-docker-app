@@ -4,7 +4,7 @@ const app = express();
 
 app.get('/', (req, res)=>{
     res.status(200).json({
-        message: 'this response is from the EC2 server running a docker image'
+        message: 'this response is from the EC2 server running a docker image.'
     });
 });
 
