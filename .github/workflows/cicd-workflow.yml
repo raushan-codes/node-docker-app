@@ -11,4 +11,8 @@ jobs:
             - name: Checkout source
               uses: actions/checkout@v3
             - name: Login to Docker Hub
-              run: docker login -u 
+              run: docker login -u ${{ secrets.DOCKER_USERNAME}} -p ${{ secrets.DOCKER_PASSWORD}}
+            - name: Build Docker image
+              run: docker build -t raushancodes/docker-app .
+            - name: Publishing image to docker hub
+              run: docker push raushancodes/docker-app:latest
