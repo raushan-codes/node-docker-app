@@ -4,7 +4,7 @@ const app = express();
 
 app.get('/', (req, res)=>{
     res.status(200).json({
-        message: 'short message from the server'
+        message: 'short message from the server. runner is great'
     });
 });
 
