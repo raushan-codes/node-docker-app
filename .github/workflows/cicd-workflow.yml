@@ -16,6 +16,7 @@ jobs:
               run: docker build -t raushancodes/docker-app .
             - name: Publishing image to docker hub
               run: docker push raushancodes/docker-app:latest
+              
     deploy:
         runs-on: [test-server-ec2]
         steps:
