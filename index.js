@@ -4,7 +4,7 @@ const app = express();
 
 app.get('/', (req, res)=>{
     res.status(200).json({
-        message: 'short message from the server. used svc.sh to keep the runner in the background.'
+        message: 'short message from the server. used svc.sh to keep the runner in the background. check again'
     });
 });
 
